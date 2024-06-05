@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app-one
-          image: doogie42/app3
+          image: doogie42/app2
           ports:
             - containerPort: 80
               name: http-web-svc
