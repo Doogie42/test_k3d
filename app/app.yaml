@@ -35,7 +35,7 @@ spec:
   ports:
     - name: name-of-service-port
       protocol: TCP
-      port: 8887
+      port: 8888
       targetPort: http-web-svc
 
 
