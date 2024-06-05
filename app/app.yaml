@@ -18,7 +18,7 @@ spec:
         - name: app-one
           image: wil42/playground:v2
           ports:
-            - containerPort: 8888
+            - containerPort: 80
               name: http-web-svc
 
 ---
