@@ -17,8 +17,9 @@ spec:
       containers:
         - name: app-one
           image: wil42/playground:v1
+          # image: doogie42/app3
           ports:
-            - containerPort: 80
+            - containerPort: 8888
               name: http-web-svc
 
 ---
@@ -28,8 +29,8 @@ kind: Service
 metadata:
   name: app-one
 spec:
-  # type: LoadBalancer
-  type: NodePort
+  type: LoadBalancer
+  # type: NodePort
   # loadBalancerIP: 127.0.0.1
   # externalIPs:
   #  - 127.0.0.1
@@ -39,5 +40,4 @@ spec:
     - name: name-of-service-port
       protocol: TCP
       port: 8888
-      targetPort: http-web-svc
-
+      targetPort: 8888
